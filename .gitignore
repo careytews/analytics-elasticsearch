@@ -1,0 +1,6 @@
+/elasticsearch
+/vendor
+/go
+.*
+!.gitignore
+!.dockerignore

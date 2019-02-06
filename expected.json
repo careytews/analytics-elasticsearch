@@ -1,0 +1,217 @@
+[
+    {
+	"id": "f30ca938-8c36-48f0-c8d3-5156a0ea2297",
+	"action": "dns_message",
+	"device": "PCAP",
+	"network": "test",
+        "origin": "device",
+	"time": "2017-11-15T09:29:04.773Z",
+	"src": {
+	    "dns": [
+		""
+	    ],
+	    "ipv4": [
+		"192.168.1.1"
+	    ],
+	    "udp": [
+		"53"
+	    ]
+	},
+	"dest": {
+	    "dns": [
+		""
+	    ],
+	    "ipv4": [
+		"192.168.1.80"
+	    ],
+	    "udp": [
+		"52248"
+	    ]
+	},
+	"dns": {
+	    "query": {
+		"name": [
+		    "bookmarks.yahoo.com"
+		],
+		"class": [
+		    "IN"
+		],
+		"type": [
+		    "AAAA"
+		]
+	    },
+	    "answer": {
+		"name": [
+		    "bookmarks.a03.yahoodns.net"
+		],
+		"class": [
+		    "IN"
+		],
+		"type": [
+		    "CNAME"
+		],
+		"address": [
+		    ""
+		]
+	    },
+	    "type": "response"
+	},
+	"indicators": {
+	    "id": [
+		"1"
+	    ],
+	    "type": [
+		"hostname"
+	    ],
+	    "value": [
+		"example.com"
+	    ],
+	    "description": [
+		"Test"
+	    ],
+	    "category": [
+		"test"
+	    ],
+	    "author": [
+		"?"
+	    ],
+	    "source": [
+		"?"
+	    ],
+	    "probability": [
+		0
+	    ]
+	},
+	"risk": 0
+    },
+    {
+	"id": "fa5ce93c-d2a5-4499-c471-3777e1be9901",
+	"action": "icmp",
+	"device": "PCAP",
+	"network": "test",
+        "origin": "network",
+	"time": "2017-11-15T09:29:53.001Z",
+	"src": {
+	    "icmp": [
+		""
+	    ],
+	    "ipv4": [
+		"131.151.32.129"
+	    ]
+	},
+	"dest": {
+	    "icmp": [
+		""
+	    ],
+	    "ipv4": [
+		"131.151.32.21"
+	    ]
+	},
+	"icmp": {
+	    "type": 192,
+	    "code": 193
+	},
+	"indicators": {
+	    "id": [
+		"1"
+	    ],
+	    "type": [
+		"hostname"
+	    ],
+	    "value": [
+		"example.com"
+	    ],
+	    "description": [
+		"Test"
+	    ],
+	    "category": [
+		"test"
+	    ],
+	    "author": [
+		"?"
+	    ],
+	    "source": [
+		"?"
+	    ],
+	    "probability": [
+		0
+	    ]
+	},
+	"risk": 0
+    },
+    {
+	"id": "a6d7ede1-c4e4-4c76-cc97-e6ef1bd80de4",
+	"action": "http_response",
+	"device": "PCAP",
+	"network": "test",
+        "origin": "network",
+	"time": "2017-11-15T09:30:15.940Z",
+	"src": {
+	    "http": [
+		""
+	    ],
+	    "ipv4": [
+		"93.184.216.119"
+	    ],
+	    "tcp": [
+		"80"
+	    ]
+	},
+	"dest": {
+	    "http": [
+		""
+	    ],
+	    "ipv4": [
+		"192.168.122.11"
+	    ],
+	    "tcp": [
+		"35041"
+	    ]
+	},
+	"url": "http://example.org/",
+	"http": {
+	    "header": {
+		"Accept-Ranges": "bytes",
+		"Cache-Control": "max-age=604800",
+		"Content-Length": "1270",
+		"Content-Type": "text/html",
+		"Date": "Fri, 10 Oct 2014 20:49:42 GMT",
+		"Etag": "\"359670651\"",
+		"Expires": "Fri, 17 Oct 2014 20:49:42 GMT",
+		"Last-Modified": "Fri, 09 Aug 2013 23:54:35 GMT",
+		"Server": "ECS (ewr/1584)",
+		"X-Cache": "HIT",
+		"x-ec-custom-error": "1"
+	    },
+	    "status": "OK",
+	    "code": 200
+	},
+	"indicators": {
+	    "id": [
+		"1"
+	    ],
+	    "type": [
+		"hostname"
+	    ],
+	    "value": [
+		"example.com"
+	    ],
+	    "description": [
+		"Test"
+	    ],
+	    "category": [
+		"test"
+	    ],
+	    "author": [
+		"?"
+	    ],
+	    "source": [
+		"?"
+	    ],
+	    "probability": [
+		0
+	    ]
+	},
+	"risk": 0
+    }
+]
